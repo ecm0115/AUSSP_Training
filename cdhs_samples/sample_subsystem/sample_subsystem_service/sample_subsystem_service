@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Should be placed in /home/system/etc/init.d (DONE AUTOMATICALLY BY INSTALL.PY)
+# Start U-radio service
+python /home/kubos/sample_subsystem/sample_subsystem_service/service.py -c /etc/kubos-config.toml &
+# Capture PID and echo to PID file (defined in monit .cfg file)
+echo $! > /var/run/sample_subsystem_service.pid
+
+exit 0
