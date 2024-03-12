@@ -8,9 +8,8 @@ from sample_subsystem_api import SampleHardware
 from kubos_service.config import Config
 from . import models
 
-service_name = "u-radio-service"
-config = Config("u-radio-service")
-server_config = Config("u-radio-server")
+service_name = "sample_subsystem_service"
+config = Config("sample_subsystem_service")
 sample_interface = SampleHardware(config.raw["serial"]["device"], config.raw["serial"]["baudrate"])
 
 
