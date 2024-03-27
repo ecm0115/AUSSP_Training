@@ -23,7 +23,6 @@ BYTEORDER: Literal["little", "big"] = "big"
 
 serial_tuple = namedtuple(typename="serial_tuple", field_names="port baudrate")
 
-
 # Not a best practice, but using lazy function definition for 1-liner.
 is_err = lambda x: isinstance(x, CommandError)
 

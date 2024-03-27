@@ -15,7 +15,7 @@ sample_interface = SampleHardware(config.raw["serial"]["device"], config.raw["se
 
 ####################################
 ##
-##   Mutation Class Definitions |
+##   Mutation Class Definitions  |
 ##                              V
 ####################################
 class WriteSystemStatus(graphene.Mutation):
